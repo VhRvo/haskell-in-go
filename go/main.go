@@ -8,10 +8,13 @@ export DYLD_LIBRARY_PATH=/Users/zhangyongzhuo/.ghcup/ghc/9.6.7/lib/ghc-9.6.7/lib
 #include "Magic_stub.h"
 #include <stdio.h>
 
+// use dynamic linking
+#cgo CFLAGS: -I/Users/zhangyongzhuo/.ghcup/ghc/9.6.7/lib/ghc-9.6.7/lib/aarch64-osx-ghc-9.6.7/rts-1.0.2/include -I/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/csrc
+#cgo LDFLAGS: -L/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/shared -L/Users/zhangyongzhuo/.ghcup/ghc/9.6.7/lib/ghc-9.6.7/lib/aarch64-osx-ghc-9.6.7/ -lHSrts-1.0.2-ghc9.6.7 -lHSbase-4.18.3.0-ghc9.6.7 -lHSghc-prim-0.10.0-ghc9.6.7 -lHSghc-bignum-1.3-ghc9.6.7 -lmagic-ffi -lffi -liconv -lm -ldl
 
 // 9.2.8
-#cgo CFLAGS: -I/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/include -I/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/csrc
-#cgo LDFLAGS: -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/rts-1.0.2 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/base-4.16.4.0 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/ghc-prim-0.8.0 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/ghc-bignum-1.2 -L/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/shared -lmagic-ffi -lHSrts-1.0.2_thr -lHSbase-4.16.4.0 -lHSghc-prim-0.8.0 -lHSghc-bignum-1.2 -lffi -liconv
+// #cgo CFLAGS: -I/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/include -I/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/csrc
+// #cgo LDFLAGS: -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/rts-1.0.2 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/base-4.16.4.0 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/ghc-prim-0.8.0 -L/Users/zhangyongzhuo/.ghcup/ghc/9.2.8/lib/ghc-9.2.8/lib/aarch64-osx-ghc-9.2.8/ghc-bignum-1.2 -L/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/shared -lmagic-ffi -lHSrts-1.0.2_thr -lHSbase-4.16.4.0 -lHSghc-prim-0.8.0 -lHSghc-bignum-1.2 -lffi -liconv
 
 // 9.4.8
 // #cgo CFLAGS: -I/Users/zhangyongzhuo/.ghcup/ghc/9.4.8/lib/ghc-9.4.8/lib/aarch64-osx-ghc-9.4.8/rts-1.0.2/include -I/Users/zhangyongzhuo/Desktop/Workplace/Languages/Haskell/haskell-in-go/csrc
