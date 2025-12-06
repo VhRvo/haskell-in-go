@@ -1,4 +1,4 @@
-with-compiler: /Users/zhangyongzhuo/.ghcup/ghc/9.4.8/bin/ghc
+with-compiler: /Users/zhangyongzhuo/.ghcup/ghc/9.6.7/bin/ghc
 
 packages:
   ./haskell-in-go.cabal
