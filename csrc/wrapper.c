@@ -5,7 +5,7 @@
 // Initialize the Haskell RTS so exported functions can run.
 HsBool magic_h_init(void) {
     int argc = 1;
-    char *argv[] = { "magic", NULL };
+    char *argv[] = { };
     hs_init(&argc, (char ***)&argv);
     return HS_BOOL_TRUE;
 }
